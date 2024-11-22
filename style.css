@@ -1,0 +1,646 @@
+body{
+    font-family:"senobi-gothic", sans-serifFutura, 'Century Gothic','Century Gothic', YuGothic ,'Yu Gothic',Meiryo;
+    color: #333;
+    font-size: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.headerline{
+    text-align: center;
+}
+
+.headerline p{
+    font-size: .6rem;
+}
+
+.maintitle{
+    font-size: 1.7rem;
+    font-weight:200;
+}
+
+/* 背景画面切り替え */
+.black {
+    background-color: #000;
+    color: #fff;   
+}
+
+.black a{
+    color: #fff;
+}
+
+.btn-moon {
+  background: url(img/icon/moon\ black.png) no-repeat;
+  background-size: 50px auto;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.black .btn-moon{
+  background-image: url(img/icon/sun.png);
+}
+
+.btn-icon {
+  background: url(img/icon/instagram.png) no-repeat;
+  background-size: 30px auto;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.black .btn-icon{
+  background-image: url(img/icon/Instagram\ night.png);
+}
+
+
+/* index.html */
+.main-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+
+
+/* ホバーアニメーション */
+
+.item a {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.item p {
+  font-size: .6rem;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.item a:hover p {
+  display: block;
+  opacity: 1;
+  translate: 0 0.5rem;
+}
+
+
+/* トップページのgrid表示写真01~08 */
+/* 博多駅(3階) */
+.item-01 {
+  position: relative;
+}
+
+.item-01::before {
+  content: '';
+  background: url(img/Xmas/station\ xmas1.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-01:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-01::before {
+  background-image: url(img/Xmas/station\ xmas\ night1.jpg);
+}
+
+
+/* 博多駅(トレインビュー) */
+.item-02 {
+  position: relative;
+}
+
+.item-02::before {
+  content: '';
+  background: url(img/trainview/trainview2.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-02:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-02::before {
+  background-image: url(img/trainview/trainview\ night2.jpg);
+}
+
+
+/* 博多駅(屋上) */
+.item-03 {
+  position: relative;
+}
+
+.item-03::before {
+  content: '';
+  background: url(img/rooftop/rooftop2.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-03:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-03::before {
+  background-image: url(img/rooftop/rooftop\ night2.jpg);
+}
+
+
+/* 愛宕神社 */
+.item-04 {
+  position: relative;
+}
+
+.item-04::before {
+  content: '';
+  background: url(img/atago/atago1.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-04:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-04::before {
+  background-image: url(img/atago/atago\ night1.jpg);
+}
+
+
+/* 福岡タワー */
+.item-05 {
+  position: relative;
+}
+
+.item-05::before {
+  content: '';
+  background: url(img/fukuokatower/fukuokatower4.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-05:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-05::before {
+  background-image: url(img/fukuokatower/fukuokatower\ night4.jpg);
+}
+
+
+/* 博多ポートタワー */
+.item-06 {
+  position: relative;
+}
+
+.item-06::before {
+  content: '';
+  background: url(img/porttower/porttower1.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-06:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-06::before {
+  background-image: url(img/porttower/porttower\ night1.jpg);
+}
+
+
+/* 福岡空港 */
+.item-07 {
+  position: relative;
+}
+
+.item-07::before {
+  content: '';
+  background: url(img/airport/airport4.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-07:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-07::before {
+  background-image: url(img/airport/airport\ night4.jpg);
+}
+
+
+/* キャナルシティ博多 */
+.item-08 {
+  position: relative;
+}
+
+.item-08::before {
+  content: '';
+  background: url(img/canalcity/canalcity1.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.item-08:hover::before {
+  filter: blur(5px);
+}
+
+.black .item-08::before {
+  background-image: url(img/canalcity/canalcity\ night1.jpg);
+}
+ 
+
+
+/* main */
+
+.main-footer{
+    position: relative;
+    text-align: center;
+}
+
+.main-footer::after{
+    position: absolute;
+    content: "";
+    background-color: #333;
+    width: 30%;
+    height: 1px;
+    top: 2.5rem;
+    left: 0;
+}
+
+.main-footer::before{
+    position: absolute;
+    content: "";
+    background-color: #333;
+    width: 30%;
+    height: 1px;
+    top: 2.5rem;
+    right: 0;
+}
+
+.main-footer p{
+    font-size: .6rem;
+}
+
+.main-footer p:first-child{
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+
+.main-footer-c{
+    padding-top: 6rem;
+}
+
+.footer-pr{
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.snsicon{
+  width: 20px;
+}
+
+
+/* hakatastation.html */
+.wrapper{
+    /* max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-item{
+    position: relative;
+    width: 90%;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
+
+.subitem-list{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    padding-left: 0;
+    opacity: .5;
+}
+
+.subitem{
+    width: 90%;
+}
+
+.subitem img {
+    transition: opacity .5s;
+}
+  
+.subitem img:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.gallery div {
+    position: relative;
+}
+
+.videopage{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.9rem;
+}
+
+.place{
+  position: absolute;
+  font-size: .5rem;
+  writing-mode: vertical-rl;
+  bottom: 16.5rem;
+  right: -1.5rem;
+}
+
+
+.sub-section{
+    text-align: center;
+    height: 6rem;
+}
+
+.section-place::after{
+    position: absolute;
+    content: "";
+    background-color: #333;
+    width: 15%;
+    height: 1px;
+    top: 6rem;
+    left: 0;
+}
+
+.section-place::before{
+    position: absolute;
+    content: "";
+    background-color: #333;
+    width: 15%;
+    height: 1px;
+    top: 6rem;
+    right: 0;
+}
+
+.title-section{
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.section-place{
+    position: relative;
+    padding-top: 1rem;
+}
+
+.section-place p{
+    padding-top: -0.4rem;
+    font-size: 0.8rem;
+}
+
+.section-place h2:hover{
+  color: #87cefa;
+  transition: .3s;
+}
+
+.section-place p:hover{
+  color: #87cefa;
+  transition: .3s;
+}
+
+
+.sub-footer{
+    position: relative;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+.sub-footer p{
+    text-align: center;
+    margin-top: 8rem;
+    font-size: .6rem;
+}
+
+.left{
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.left p{
+  font-size: .6rem;
+}
+
+.left p:hover{
+  color: #87cefa;
+  transition: .3s;
+}
+
+.right{
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.right p{
+    font-size: .6rem;
+}
+
+.right p:hover{
+  color: #87cefa;
+  transition: .3s;
+}
+
+/* videopage */
+
+
+.headerline img{
+    width: 50px;
+}
+
+.video-list{
+    text-align: center;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.video-item{
+    width: 95%;
+}
+
+.photopage{
+    /* position: absolute;
+    right: 20rem;
+    bottom: -5rem; */
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    margin-left: 70vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+
+    /* index.html */
+    .main-grid{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 8rem;
+        padding-bottom:4rem ;
+        margin-bottom: 5rem;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .item p {
+      font-size: .8rem;
+    }
+
+
+    /* hakatastation.html */
+    .main-item{
+        position: relative;
+        width: 33%;
+        margin-top: rem;
+        margin-bottom: 8rem;
+    }
+
+    .place{
+      bottom: 13.5rem;
+    }
+
+    .subitem-list{
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+        margin-bottom: 5rem;
+        padding-left: 0;
+        width: 50%;
+    }
+
+    .subitem{
+        width: 90%;
+    }  
+
+    .sub-footer{
+        margin-bottom: 3rem;
+    }
+
+    .section-place::after{
+        width: 40%;
+    }
+    
+    .section-place::before{
+        width: 40%;
+    }
+
+    .video-item{
+        width: 55%;
+    }
+
+    .photopage{
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        margin-left: 50vw;
+    }
+
+    .sub-footer p{
+        margin-top: 15rem;
+    }
+}
